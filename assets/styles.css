@@ -577,6 +577,32 @@ a.card:hover {
 }
 
 /* ==========================================================================
+   Map embed (venue)
+   ========================================================================== */
+.map-embed {
+  max-width: 760px;
+  margin: 0 auto;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 6px solid var(--white);
+  line-height: 0;
+}
+
+.map-embed iframe {
+  display: block;
+  width: 100%;
+  height: 420px;
+  border: 0;
+}
+
+@media (max-width: 560px) {
+  .map-embed iframe {
+    height: 320px;
+  }
+}
+
+/* ==========================================================================
    Footer
    ========================================================================== */
 .site-footer {
