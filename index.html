@@ -26,7 +26,6 @@
         <li><a href="travel.html">Travel</a></li>
         <li><a href="stay.html">Stay</a></li>
         <li><a href="explore.html">Explore</a></li>
-        <li><a class="nav__cta" href="rsvp.html">RSVP</a></li>
       </ul>
     </nav>
   </header>
@@ -42,7 +41,6 @@
       <p class="hero__meta"><span class="ph">[WEDDING DATE]</span> · <span class="ph">[VENUE]</span></p>
       <p class="hero__place">Bengaluru · India</p>
       <div class="btn-row">
-        <a class="btn btn--primary" href="rsvp.html">RSVP</a>
         <a class="btn btn--ghost" href="travel.html">Plan your trip</a>
       </div>
       <!-- Optional: add a couple photo here -->
@@ -64,13 +62,7 @@
     <!-- ===== Overview cards ===== -->
     <section class="section section--tight">
       <div class="container">
-        <div class="grid">
-          <a class="card" href="rsvp.html">
-            <div class="card__icon">💌</div>
-            <h3>RSVP</h3>
-            <p>Let us know if you can make it — and the details we'll need for the celebration.</p>
-            <span class="card__more">Respond →</span>
-          </a>
+        <div class="grid" style="max-width: 860px; margin-inline: auto;">
           <a class="card" href="travel.html">
             <div class="card__icon">✈️</div>
             <h3>Travel</h3>
@@ -98,10 +90,7 @@
       <div class="container">
         <h2 class="section-title">Will you join us?</h2>
         <p class="section-intro">Kindly respond by <span class="ph">[RSVP DEADLINE]</span> so we can plan
-          accordingly.</p>
-        <div class="btn-row">
-          <a class="btn btn--primary" href="rsvp.html">RSVP now</a>
-        </div>
+          accordingly. The RSVP button is always in the corner whenever you're ready.</p>
       </div>
     </section>
   </main>
@@ -120,6 +109,11 @@
     </ul>
     <p class="footer-fineprint">With love · See you in Bengaluru ✿</p>
   </footer>
+
+  <!-- Floating RSVP button (persistent; omitted on rsvp.html) -->
+  <a class="rsvp-fab" href="rsvp.html" aria-label="RSVP to the wedding">
+    <span aria-hidden="true">💌</span> RSVP
+  </a>
 </body>
 
 </html>

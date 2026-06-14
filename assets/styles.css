@@ -291,6 +291,46 @@ button:focus-visible,
 }
 
 /* ==========================================================================
+   Floating RSVP button (persistent on every page except the RSVP page)
+   ========================================================================== */
+.rsvp-fab {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 100;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 24px;
+  border-radius: 999px;
+  background: var(--pink-500);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  box-shadow: 0 10px 26px rgba(209, 107, 134, 0.45);
+  transition: transform 0.12s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rsvp-fab:hover,
+.rsvp-fab:focus-visible {
+  background: var(--pink-300);
+  color: var(--green-900);
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(209, 107, 134, 0.5);
+}
+
+@media (max-width: 560px) {
+  .rsvp-fab {
+    right: 16px;
+    bottom: 16px;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+/* ==========================================================================
    Hero
    ========================================================================== */
 .hero {
