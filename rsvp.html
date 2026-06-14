@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSVP · [BRIDE] &amp; [GROOM]</title>
+  <meta name="description" content="RSVP to [BRIDE] and [GROOM]'s wedding in Bengaluru.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="index.html">[BRIDE] &amp; [GROOM]</a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="stay.html">Stay</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a class="nav__cta" href="rsvp.html" aria-current="page">RSVP</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">RSVP</h1>
+        <p class="section-intro">
+          We'd love to know if you can join us. Please respond by
+          <span class="ph">[RSVP DEADLINE]</span>. If you're traveling with family, add a response for
+          each guest.
+        </p>
+
+        <!-- ================================================================
+             GOOGLE FORM EMBED
+             ----------------------------------------------------------------
+             1. Create a Google Form (forms.google.com). Suggested fields:
+                  • Full name (short answer, required)
+                  • Email (short answer)
+                  • Will you attend? (multiple choice: Joyfully accept / Regretfully decline)
+                  • Number of guests (short answer or dropdown)
+                  • Which events will you attend? (checkboxes — list your events)
+                  • Dietary restrictions (short answer)
+                  • Song request (short answer, optional)
+                  • Anything else / message (paragraph, optional)
+             2. In the Form: Send ▸ < > (embed) ▸ copy the iframe src.
+             3. Replace [FORM_ID] below with the long id from that URL.
+             4. Responses collect automatically in the linked Google Sheet.
+             ================================================================ -->
+        <div class="form-wrap">
+          <iframe
+            src="https://docs.google.com/forms/d/e/[FORM_ID]/viewform?embedded=true"
+            title="Wedding RSVP form"
+            loading="lazy">
+            Loading the RSVP form…
+          </iframe>
+        </div>
+
+        <p class="center muted">
+          Form not loading?
+          <!-- Replace [FORM_ID] here too (this is the non-embedded /viewform link). -->
+          <a class="btn btn--ghost" href="https://docs.google.com/forms/d/e/[FORM_ID]/viewform"
+            target="_blank" rel="noopener">Open the RSVP form ↗</a>
+        </p>
+
+        <div class="callout callout--note" style="max-width:720px;margin:32px auto 0;">
+          <strong>Questions?</strong> Reach us at
+          <a href="mailto:[CONTACT EMAIL]">[CONTACT EMAIL]</a>
+          or <span class="ph">[CONTACT PHONE]</span>. We're happy to help with anything —
+          travel, hotels, or the schedule.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-names"><span class="ph">[BRIDE]</span> &amp; <span class="ph">[GROOM]</span></div>
+    <p class="footer-meta"><span class="ph">[WEDDING DATE]</span> · <span class="ph">[VENUE]</span> ·
+      Bengaluru, India</p>
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rsvp.html">RSVP</a></li>
+      <li><a href="travel.html">Travel</a></li>
+      <li><a href="stay.html">Stay</a></li>
+      <li><a href="explore.html">Explore</a></li>
+    </ul>
+    <p class="footer-fineprint">With love · See you in Bengaluru ✿</p>
+  </footer>
+</body>
+
+</html>

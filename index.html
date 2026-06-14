@@ -4,11 +4,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello World</title>
+  <title>[BRIDE] &amp; [GROOM] · Wedding in Bengaluru</title>
+  <meta name="description"
+    content="Join us in Bengaluru, India. RSVP, travel tips, where to stay, and things to do.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <!-- Google Fonts (optional — system fonts are the fallback in styles.css) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
-  <h1>Hello, World!</h1>
+  <!-- ===== Header / nav (identical on every page) ===== -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="index.html">[BRIDE] &amp; [GROOM]</a>
+      <ul class="nav__links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="stay.html">Stay</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a class="nav__cta" href="rsvp.html">RSVP</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <p class="hero__eyebrow">We're getting married</p>
+      <h1 class="hero__names">
+        <span class="ph">[BRIDE]</span> <span class="hero__amp">&amp;</span> <span class="ph">[GROOM]</span>
+      </h1>
+      <div class="hero__divider"></div>
+      <p class="hero__meta"><span class="ph">[WEDDING DATE]</span> · <span class="ph">[VENUE]</span></p>
+      <p class="hero__place">Bengaluru · India</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="rsvp.html">RSVP</a>
+        <a class="btn btn--ghost" href="travel.html">Plan your trip</a>
+      </div>
+      <!-- Optional: add a couple photo here -->
+      <!-- <img class="hero__photo" src="assets/couple.jpg" alt="[BRIDE] and [GROOM]"> -->
+    </section>
+
+    <!-- ===== Welcome ===== -->
+    <section class="section section--tight">
+      <div class="container center">
+        <h2 class="section-title">Welcome</h2>
+        <p class="lead" style="margin-inline:auto;">
+          We can't wait to celebrate with you in Bengaluru! Many of you are traveling a long way to be
+          there, so we've put together everything you need — how to RSVP, how to get here, where to stay,
+          and the best of the city while you're in town.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Overview cards ===== -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="grid">
+          <a class="card" href="rsvp.html">
+            <div class="card__icon">💌</div>
+            <h3>RSVP</h3>
+            <p>Let us know if you can make it — and the details we'll need for the celebration.</p>
+            <span class="card__more">Respond →</span>
+          </a>
+          <a class="card" href="travel.html">
+            <div class="card__icon">✈️</div>
+            <h3>Travel</h3>
+            <p>Flying from the US? Visas, flights, money, SIM cards, and getting around the city.</p>
+            <span class="card__more">Get there →</span>
+          </a>
+          <a class="card" href="stay.html">
+            <div class="card__icon">🏨</div>
+            <h3>Where to Stay</h3>
+            <p>Recommended hotels and neighborhoods near the venue, at every budget.</p>
+            <span class="card__more">Find a room →</span>
+          </a>
+          <a class="card" href="explore.html">
+            <div class="card__icon">🌴</div>
+            <h3>Explore Bengaluru</h3>
+            <p>Things to do, where to eat, and day trips to make a holiday of your visit.</p>
+            <span class="card__more">Discover →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Closing CTA ===== -->
+    <section class="section center">
+      <div class="container">
+        <h2 class="section-title">Will you join us?</h2>
+        <p class="section-intro">Kindly respond by <span class="ph">[RSVP DEADLINE]</span> so we can plan
+          accordingly.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="rsvp.html">RSVP now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer (identical on every page) ===== -->
+  <footer class="site-footer">
+    <div class="footer-names"><span class="ph">[BRIDE]</span> &amp; <span class="ph">[GROOM]</span></div>
+    <p class="footer-meta"><span class="ph">[WEDDING DATE]</span> · <span class="ph">[VENUE]</span> ·
+      Bengaluru, India</p>
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rsvp.html">RSVP</a></li>
+      <li><a href="travel.html">Travel</a></li>
+      <li><a href="stay.html">Stay</a></li>
+      <li><a href="explore.html">Explore</a></li>
+    </ul>
+    <p class="footer-fineprint">With love · See you in Bengaluru ✿</p>
+  </footer>
 </body>
 
 </html>
