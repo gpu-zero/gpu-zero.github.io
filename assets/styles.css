@@ -611,6 +611,87 @@ a.card:hover {
 }
 
 /* ==========================================================================
+   Itinerary timeline
+   ========================================================================== */
+.timeline {
+  list-style: none;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+/* the vertical rail */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--pink-300);
+}
+
+.event {
+  position: relative;
+  padding: 0 0 30px 58px;
+}
+
+.event:last-child {
+  padding-bottom: 0;
+}
+
+/* the dot */
+.event::before {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--pink-500);
+  border: 3px solid var(--cream);
+  box-shadow: 0 0 0 2px var(--pink-300);
+}
+
+.event__when {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+  margin-bottom: 4px;
+}
+
+.event__date {
+  font-weight: 700;
+  color: var(--green-900);
+  letter-spacing: 0.2px;
+}
+
+.event__time {
+  color: var(--pink-500);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.event__title {
+  margin: 2px 0 6px;
+  font-size: 1.4rem;
+}
+
+.event__loc {
+  margin: 0 0 6px;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.event__desc {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+/* ==========================================================================
    Map embed (venue)
    ========================================================================== */
 .map-embed {
