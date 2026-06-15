@@ -652,26 +652,23 @@ button:focus-visible,
   text-align: right;
 }
 
-/* Venue map — minimal frame, spans the full block width so the map's info
-   card (top-left) clears the centred pin */
-.venue-map {
-  grid-column: 1 / -1;
-}
-
+/* Venue map — sits in the body column; made tall so the info card
+   (top-left) drops clear of the centred pin */
 .editorial .map-embed {
   position: relative;
   border: 1px solid var(--hairline);
   border-radius: 2px;
   box-shadow: none;
   max-width: 100%;
+  margin-top: 8px;
 }
 
-.editorial .map-embed iframe { height: 400px; }
+.editorial .map-embed iframe { height: 540px; }
 
 /* Recenter control floated over the map (our button on top of Google's iframe) */
 .map-recenter {
   position: absolute;
-  bottom: 14px;
+  top: 14px;
   right: 14px;
   z-index: 2;
   display: inline-flex;
