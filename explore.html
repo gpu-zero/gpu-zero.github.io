@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Explore Bengaluru · [BRIDE] &amp; [GROOM]</title>
+  <title>Explore Bengaluru · Bettina &amp; Ajay</title>
   <meta name="description"
     content="Things to do, where to eat, shopping, and day trips around Bengaluru, India.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -18,9 +18,10 @@
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="Primary">
-      <a class="nav__brand" href="index.html">[BRIDE] &amp; [GROOM]</a>
+      <a class="nav__brand" href="index.html">Bettina &amp; Ajay</a>
       <ul class="nav__links">
         <li><a href="index.html">Home</a></li>
+        <li><a href="story.html">Story</a></li>
         <li><a href="travel.html">Travel</a></li>
         <li><a href="stay.html">Stay</a></li>
         <li><a href="explore.html" aria-current="page">Explore</a></li>
@@ -30,9 +31,14 @@
   </header>
 
   <main>
+    <section class="page-hero page-hero--explore" aria-label="Explore Bengaluru">
+      <div class="page-hero__inner">
+        <h1 class="section-title">Explore Bengaluru</h1>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
-        <h1 class="section-title">Explore Bengaluru</h1>
         <p class="section-intro">
           Bengaluru is green, easygoing, and famous for its gardens, food, and café culture. Here are our
           favorites — plus a few day trips if you want to make a holiday of it.
@@ -59,21 +65,75 @@
             </ul>
           </article>
 
-          <!-- FOOD -->
+          <!-- WHAT TO EAT -->
           <article class="info-block">
-            <h3>🍽️ Where to eat</h3>
+            <h3>🍽️ What to eat</h3>
+
+            <div class="carousel" data-carousel>
+              <div class="carousel__viewport">
+                <ul class="carousel__track">
+                  <li class="carousel__slide" data-caption="Crisp masala dosa">
+                    <img src="assets/photos/dosa.jpg"
+                      alt="A crisp golden masala dosa served with chutney and sambar" loading="lazy">
+                  </li>
+                  <li class="carousel__slide" data-caption="Soft steamed idli">
+                    <img src="assets/photos/idli.jpg"
+                      alt="Soft steamed idli served with chutney and sambar" loading="lazy">
+                  </li>
+                  <li class="carousel__slide" data-caption="South Indian filter coffee">
+                    <img src="assets/photos/filter-coffee.webp"
+                      alt="South Indian filter coffee served in a traditional brass davara and tumbler"
+                      loading="lazy">
+                  </li>
+                </ul>
+                <button type="button" class="carousel__btn carousel__btn--prev" data-carousel-prev
+                  aria-label="Previous image">‹</button>
+                <button type="button" class="carousel__btn carousel__btn--next" data-carousel-next
+                  aria-label="Next image">›</button>
+              </div>
+              <p class="carousel__caption" data-carousel-caption>Crisp masala dosa</p>
+              <div class="carousel__dots" data-carousel-dots aria-hidden="true"></div>
+            </div>
+
             <ul>
-              <li><strong>South Indian classics</strong> — start your day with dosa, idli, and vada:
-                <em>MTR (Mavalli Tiffin Room)</em>, <em>Vidyarthi Bhavan</em> (legendary benne masala
-                dosa), <em>CTR / Shri Sagar</em>, and <em>Brahmin's Coffee Bar</em>.</li>
-              <li><strong>Filter coffee</strong> — the local ritual; have it strong and frothy.</li>
+              <li><strong>South Indian tiffin</strong> — dosa, idli, and vada to start the day.</li>
+              <li><strong>Filter coffee</strong> — the local ritual; strong and frothy, served in a brass
+                tumbler.</li>
               <li><strong>Donne biryani</strong> — Bangalore-style biryani served in a leaf bowl.</li>
-              <li><strong>VV Puram Food Street</strong> — evening street-food crawl.</li>
-              <li><strong>Indiranagar &amp; Koramangala</strong> — modern restaurants, cafés, and bars for
-                dinner and drinks.</li>
+              <li><strong>VV Puram Food Street</strong> — an evening street-food crawl.</li>
             </ul>
             <p class="muted" style="margin:10px 0 0;font-size:0.9rem;">Mostly vegetarian-friendly — South
               India is a paradise for veg eaters.</p>
+          </article>
+
+          <!-- WHERE TO EAT -->
+          <article class="info-block">
+            <h3>🥘 Where to eat</h3>
+            <p><strong>Indiranagar &amp; Koramangala</strong> hold the densest cluster of modern
+              restaurants, cafés, and bars — but some of the best meals are at the old-school institutions
+              below. <span class="muted">(Tap a name to open its map listing &amp; website.)</span></p>
+            <ul class="restaurant-list">
+              <li><a href="https://www.google.com/maps/search/?api=1&amp;query=MTR%20Mavalli%20Tiffin%20Room%20Bengaluru"
+                  target="_blank" rel="noopener">MTR (Mavalli Tiffin Room)</a> — the 1924 institution;
+                rava idli &amp; masala dosa.</li>
+              <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Vidyarthi%20Bhavan%20Bengaluru"
+                  target="_blank" rel="noopener">Vidyarthi Bhavan</a> — legendary benne (butter) masala
+                dosa in Basavanagudi.</li>
+              <li><a href="https://www.google.com/maps/search/?api=1&amp;query=CTR%20Shri%20Sagar%20Malleshwaram%20Bengaluru"
+                  target="_blank" rel="noopener">CTR / Shri Sagar</a> — crisp benne dosa in Malleshwaram.</li>
+              <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Brahmins%20Coffee%20Bar%20Bengaluru"
+                  target="_blank" rel="noopener">Brahmin's Coffee Bar</a> — no-frills idli, vada &amp;
+                filter coffee.</li>
+              <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Karavalli%20Bengaluru"
+                  target="_blank" rel="noopener">Karavalli</a> — refined coastal South Indian at The
+                Gateway Hotel.</li>
+              <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Toit%20Brewpub%20Indiranagar%20Bengaluru"
+                  target="_blank" rel="noopener">Toit</a> — craft brewery &amp; kitchen in Indiranagar.</li>
+              <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Byg%20Brewski%20Brewing%20Company%20Bengaluru"
+                  target="_blank" rel="noopener">Byg Brewski</a> — one of India's largest breweries.</li>
+            </ul>
+            <p class="muted" style="margin:12px 0 0;font-size:0.9rem;">The Michelin Guide doesn't yet cover
+              India, so none of these carry a Michelin star — but the dosas earn their own.</p>
           </article>
 
           <!-- SHOPPING -->
@@ -106,28 +166,28 @@
                 by the film <em>Sholay</em>.</li>
             </ul>
           </article>
-
-          <div class="callout callout--note">
-            <strong>Good to know:</strong> opening hours, ticket prices, and availability change often —
-            please double-check before you set out, and book popular day trips ahead. Happy to give more
-            tailored suggestions — just ask us!
-          </div>
         </div>
 
-        <div class="btn-row" style="margin-top:36px;">
-          <a class="btn btn--primary" href="stay.html">Where to stay →</a>
-          <a class="btn btn--ghost" href="travel.html">Travel info →</a>
-        </div>
       </div>
     </section>
+
+    <!-- Flow into the next section -->
+    <div class="next-up">
+      <a class="next-up__link" href="rsvp.html">
+        <span class="next-up__label">Up next</span>
+        <span class="next-up__title">RSVP</span>
+        <span class="next-up__cue">Let us know you're coming →</span>
+      </a>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <div class="footer-names"><span class="ph">[BRIDE]</span> &amp; <span class="ph">[GROOM]</span></div>
-    <p class="footer-meta"><span class="ph">[WEDDING DATE]</span> · <span class="ph">[VENUE]</span> ·
+    <div class="footer-names">Bettina &amp; Ajay</div>
+    <p class="footer-meta">November 10–12, 2026 · Devaki Ananda Suvarna Convention Hall ·
       Bengaluru, India</p>
     <ul class="footer-nav">
       <li><a href="index.html">Home</a></li>
+      <li><a href="story.html">Story</a></li>
       <li><a href="rsvp.html">RSVP</a></li>
       <li><a href="travel.html">Travel</a></li>
       <li><a href="stay.html">Stay</a></li>
@@ -135,6 +195,60 @@
     </ul>
     <p class="footer-fineprint">With love · See you in Bengaluru ✿</p>
   </footer>
+
+  <!-- Image carousel: prev/next + auto-rotate, pauses on hover/focus, no-JS friendly -->
+  <script>
+    (function () {
+      var reduceMotion = window.matchMedia
+        && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      document.querySelectorAll('[data-carousel]').forEach(function (root) {
+        var track = root.querySelector('.carousel__track');
+        var slides = Array.prototype.slice.call(root.querySelectorAll('.carousel__slide'));
+        if (!track || slides.length < 2) return;
+
+        var caption = root.querySelector('[data-carousel-caption]');
+        var dotsWrap = root.querySelector('[data-carousel-dots]');
+        var index = 0;
+        var timer = null;
+
+        var dots = slides.map(function (slide, i) {
+          var dot = document.createElement('button');
+          dot.type = 'button';
+          dot.className = 'carousel__dot';
+          dot.setAttribute('aria-label', 'Go to image ' + (i + 1));
+          dot.addEventListener('click', function () { go(i); restart(); });
+          dotsWrap.appendChild(dot);
+          return dot;
+        });
+
+        function go(n) {
+          index = (n + slides.length) % slides.length;
+          track.style.transform = 'translateX(' + (-index * 100) + '%)';
+          if (caption) caption.textContent = slides[index].getAttribute('data-caption') || '';
+          dots.forEach(function (dot, i) {
+            dot.setAttribute('aria-current', i === index ? 'true' : 'false');
+          });
+        }
+        function next() { go(index + 1); }
+        function prev() { go(index - 1); }
+        function start() { if (!reduceMotion && !timer) timer = setInterval(next, 5000); }
+        function stop() { if (timer) { clearInterval(timer); timer = null; } }
+        function restart() { stop(); start(); }
+
+        root.querySelector('[data-carousel-next]').addEventListener('click', function () { next(); restart(); });
+        root.querySelector('[data-carousel-prev]').addEventListener('click', function () { prev(); restart(); });
+        root.addEventListener('mouseenter', stop);
+        root.addEventListener('mouseleave', start);
+        root.addEventListener('focusin', stop);
+        root.addEventListener('focusout', start);
+
+        root.setAttribute('data-ready', '');
+        go(0);
+        start();
+      });
+    })();
+  </script>
 </body>
 
 </html>
