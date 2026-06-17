@@ -147,7 +147,7 @@ button:focus-visible,
   content: "❧";
   display: block;
   color: var(--pink-500);
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   margin-top: 6px;
 }
 
@@ -223,20 +223,51 @@ button:focus-visible,
 }
 
 .nav__links a.nav__cta {
-  background: var(--green-700);
+  position: relative;
+  overflow: hidden;
+  background: var(--pink-500);
   color: var(--white);
   font-weight: 700;
-  margin-left: 6px;
-  box-shadow: 0 2px 8px rgba(30, 58, 43, 0.2);
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  margin-left: 10px;
+  padding: 9px 20px;
+  box-shadow: 0 3px 12px rgba(209, 107, 134, 0.5);
+  transition: transform 0.12s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .nav__links a.nav__cta:hover {
-  background: var(--green-500);
-  color: var(--white);
+  background: var(--pink-300);
+  color: var(--green-900);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 16px rgba(209, 107, 134, 0.55);
+}
+
+/* Periodic light sweep across the RSVP button */
+.nav__links a.nav__cta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(100deg, transparent 0%, rgba(255, 255, 255, 0.5) 50%, transparent 100%);
+  transform: skewX(-20deg);
+  pointer-events: none;
+  animation: cta-shimmer 4s ease-in-out infinite;
+}
+
+@keyframes cta-shimmer {
+  0%, 18% { left: -150%; }
+  58%, 100% { left: 160%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav__links a.nav__cta::before { animation: none; }
 }
 
 .nav__links a.nav__cta[aria-current="page"] {
-  background: var(--green-700);
+  background: var(--pink-500);
 }
 
 /* ==========================================================================
@@ -266,6 +297,16 @@ button:focus-visible,
 .btn--primary:hover {
   background: var(--green-500);
   color: var(--white);
+}
+
+.btn--pink {
+  background: var(--pink-500);
+  color: var(--white);
+}
+
+.btn--pink:hover {
+  background: var(--pink-300);
+  color: var(--green-900);
 }
 
 .btn--ghost {
@@ -344,7 +385,8 @@ button:focus-visible,
 
 /* Quiet inline note — a thin rule instead of a filled box */
 .note-lead {
-  margin: 0 0 28px;
+  max-width: 880px;
+  margin: 0 auto 28px;
   padding: 2px 0 2px 16px;
   border-left: 2px solid var(--green-500);
   color: var(--ink-soft);
@@ -701,7 +743,7 @@ button:focus-visible,
 }
 
 .schedule__qual {
-  font-size: 0.78rem;
+  font-size: 1rem;
   font-style: italic;
   color: var(--ink-soft);
 }
@@ -912,6 +954,7 @@ button:focus-visible,
   justify-content: center;
   text-align: center;
   gap: 12px 14px;
+  max-width: 880px;
   margin: 0 auto 28px;
   padding: 16px 20px;
   background: var(--green-100);
@@ -1026,6 +1069,9 @@ button:focus-visible,
   overflow: hidden;
   border-radius: 12px;
   box-shadow: var(--shadow-sm);
+  /* Promote to its own layer so the rounded clip reliably hides
+     the adjacent (transformed) slides — no edge bleed. */
+  transform: translateZ(0);
 }
 
 .carousel__track {
@@ -1043,8 +1089,9 @@ button:focus-visible,
 
 .carousel__slide img {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
+  object-position: center;
   display: block;
 }
 
@@ -1134,6 +1181,18 @@ button:focus-visible,
   margin-bottom: 0;
 }
 
+/* Make the map links obviously clickable with a trailing link glyph */
+.restaurant-list a {
+  font-weight: 600;
+}
+
+.restaurant-list a::after {
+  content: "↗";
+  margin-left: 3px;
+  font-size: 0.85em;
+  color: var(--pink-500);
+}
+
 /* ==========================================================================
    Cross-page flow — full-bleed "Up next" band so each page bleeds into the
    next as you scroll (Home → Travel → Stay → Explore → RSVP).
@@ -1150,8 +1209,8 @@ button:focus-visible,
 .next-up--story {
   background-image:
     linear-gradient(180deg, rgba(16, 22, 18, 0.62) 0%, rgba(16, 22, 18, 0.54) 45%, rgba(16, 22, 18, 0.74) 100%),
-    url("photos/couple-photo5-golden-gate.jpeg");
-  background-position: center 40%;
+    url("photos/golden-gate-bridge.webp");
+  background-position: center 60%;
 }
 
 .next-up--travel {
@@ -1262,6 +1321,13 @@ button:focus-visible,
     linear-gradient(180deg, rgba(16, 22, 18, 0.58) 0%, rgba(16, 22, 18, 0.50) 45%, rgba(16, 22, 18, 0.70) 100%),
     url("photos/lalbagh-botanical.jpg");
   background-position: center 55%;
+}
+
+.page-hero--story {
+  background-image:
+    linear-gradient(180deg, rgba(16, 22, 18, 0.52) 0%, rgba(16, 22, 18, 0.46) 45%, rgba(16, 22, 18, 0.66) 100%),
+    url("photos/golden-gate-bridge.webp");
+  background-position: center 60%;
 }
 
 .page-hero__inner {
