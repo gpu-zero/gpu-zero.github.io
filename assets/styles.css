@@ -734,13 +734,13 @@ button:focus-visible,
 
 /* Centered serif intro line */
 .ed-intro {
-  padding: 8px 0 48px;
+  padding: 8px 0 28px;
   text-align: center;
   border-bottom: 1px solid var(--hairline);
 }
 
 .ed-intro .btn {
-  margin-top: 26px;
+  margin-top: 16px;
 }
 
 .ed-intro p {
