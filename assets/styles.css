@@ -756,7 +756,7 @@ button:focus-visible,
 /* Label | body block */
 .block {
   display: grid;
-  grid-template-columns: 140px 1fr;
+  grid-template-columns: 160px 1fr;
   gap: 16px 32px;
   padding: 52px 0;
   border-bottom: 1px solid var(--hairline);
