@@ -247,6 +247,10 @@ button:focus-visible,
   font-weight: 600;
 }
 
+.nav__menu a[href="story.html"][aria-current="page"] {
+  color: var(--white);
+}
+
 .nav__cta {
   position: relative;
   overflow: hidden;
