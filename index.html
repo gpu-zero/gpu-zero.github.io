@@ -19,14 +19,20 @@
   <header class="site-header">
     <nav class="nav" aria-label="Primary">
       <a class="nav__brand" href="index.html">Bettina &amp; Ajay</a>
-      <ul class="nav__links">
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="travel.html">Travel</a></li>
-        <li><a href="stay.html">Stay</a></li>
-        <li><a href="explore.html">Explore</a></li>
-        <li><a href="story.html">Our Story</a></li>
-        <li><a class="nav__cta" href="rsvp.html">RSVP</a></li>
-      </ul>
+      <input type="checkbox" id="nav-toggle" class="nav__toggle" aria-label="Toggle menu">
+      <div class="nav__right">
+        <a class="nav__link" href="index.html" aria-current="page">Home</a>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="travel.html">Travel</a></li>
+          <li><a href="stay.html">Stay</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="story.html">Our Story</a></li>
+        </ul>
+        <a class="nav__cta" href="rsvp.html">RSVP</a>
+        <label for="nav-toggle" class="nav__burger" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </label>
+      </div>
     </nav>
   </header>
 
@@ -97,8 +103,7 @@
         <div class="block__body">
           <p>Indian weddings are a celebration of colour, so come dressed to join in. Both <strong>traditional Indian wear and Western wear</strong> are warmly welcome. A few notes to help:</p>
           <ul class="bullets">
-            <li>Please <strong>avoid all-black or all-white</strong> outfits — both are traditionally worn
-              for mourning.</li>
+            <li>Please <strong>avoid all-black or all-white</strong> outfits — they're not quite right for a wedding celebration.</li>
             <li>The ceremony is <strong>shoes-and-socks-off</strong>, so leave the heels at home and pick
               footwear that's easy to slip on and off.</li>
             <li>For women, we suggest <strong>knee-length or longer</strong> dresses or skirts. Bengaluru in November is warm by day, so <strong>natural fabrics like linen and cotton</strong> will keep you comfortable.</li>

@@ -19,14 +19,20 @@
   <header class="site-header">
     <nav class="nav" aria-label="Primary">
       <a class="nav__brand" href="index.html">Bettina &amp; Ajay</a>
-      <ul class="nav__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="travel.html" aria-current="page">Travel</a></li>
-        <li><a href="stay.html">Stay</a></li>
-        <li><a href="explore.html">Explore</a></li>
-        <li><a href="story.html">Our Story</a></li>
-        <li><a class="nav__cta" href="rsvp.html">RSVP</a></li>
-      </ul>
+      <input type="checkbox" id="nav-toggle" class="nav__toggle" aria-label="Toggle menu">
+      <div class="nav__right">
+        <a class="nav__link" href="index.html">Home</a>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="travel.html" aria-current="page">Travel</a></li>
+          <li><a href="stay.html">Stay</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="story.html">Our Story</a></li>
+        </ul>
+        <a class="nav__cta" href="rsvp.html">RSVP</a>
+        <label for="nav-toggle" class="nav__burger" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </label>
+      </div>
     </nav>
   </header>
 
