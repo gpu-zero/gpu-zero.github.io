@@ -771,7 +771,7 @@ button:focus-visible,
   font-size: 0.76rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.16em;
   color: var(--green-700);
 }
 
