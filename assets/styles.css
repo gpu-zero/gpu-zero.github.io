@@ -737,6 +737,8 @@ button:focus-visible,
 .schedule li:last-child { border-bottom: 0; }
 
 .schedule__name {
+  display: inline-flex;
+  align-items: center;
   font-family: var(--serif);
   font-size: 1.25rem;
   color: var(--green-900);
