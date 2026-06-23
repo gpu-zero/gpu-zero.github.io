@@ -736,15 +736,6 @@ button:focus-visible,
 
 .schedule li:last-child { border-bottom: 0; }
 
-.schedule li.schedule__sub {
-  padding: 6px 0 6px 1rem;
-  border-bottom-color: rgba(35, 48, 42, 0.07);
-}
-
-.schedule__sub .schedule__name {
-  font-size: 1rem;
-  color: var(--ink-soft);
-}
 
 .schedule__name {
   display: inline-flex;
@@ -773,6 +764,12 @@ button:focus-visible,
   font-size: 0.85rem;
   letter-spacing: 0.04em;
   color: var(--green-700);
+}
+
+.schedule__sub-time {
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
 }
 
 .schedule__where {
