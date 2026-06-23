@@ -734,12 +734,6 @@ button:focus-visible,
   border-bottom: 1px solid var(--hairline);
 }
 
-.schedule__left {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
 .schedule li:last-child { border-bottom: 0; }
 
 
@@ -767,14 +761,19 @@ button:focus-visible,
 }
 
 .schedule__day {
-  font-size: 0.85rem;
-  letter-spacing: 0.04em;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
   color: var(--green-700);
 }
 
+/* Meal time sits under the venue and reads as a clear sub-detail,
+   so it can't be mistaken for the event's start time */
 .schedule__sub-time {
+  margin-top: 4px;
   font-size: 0.8rem;
-  letter-spacing: 0.04em;
+  font-style: italic;
+  letter-spacing: 0.02em;
   color: var(--ink-soft);
 }
 
