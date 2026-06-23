@@ -245,6 +245,7 @@ button:focus-visible,
 .nav__menu a[href="story.html"] {
   font-family: var(--serif);
   font-style: italic;
+  font-weight: 600;
   font-size: 1.1rem;
 }
 
