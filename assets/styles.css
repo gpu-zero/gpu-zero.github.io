@@ -242,6 +242,12 @@ button:focus-visible,
   color: var(--white);
 }
 
+.nav__menu a[href="story.html"] {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
 .nav__cta {
   position: relative;
   overflow: hidden;
