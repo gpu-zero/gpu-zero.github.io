@@ -574,24 +574,6 @@ button:focus-visible,
   box-shadow: var(--shadow-sm);
   max-width: 720px;
   margin: 0 auto 24px;
-  max-height: 600px;
-  overflow-y: scroll;
-  scrollbar-width: thin;
-  scrollbar-color: var(--pink-300) var(--pink-050);
-}
-
-.form-wrap::-webkit-scrollbar {
-  width: 8px;
-}
-
-.form-wrap::-webkit-scrollbar-track {
-  background: var(--pink-050);
-  border-radius: 4px;
-}
-
-.form-wrap::-webkit-scrollbar-thumb {
-  background: var(--pink-300);
-  border-radius: 4px;
 }
 
 .form-wrap iframe {
